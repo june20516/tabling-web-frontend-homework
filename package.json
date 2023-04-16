@@ -4,5 +4,18 @@
   "main": "index.js",
   "author": "Bran <june20516@gmail.com>",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "scripts": {
+    "start": "vite"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "prettier": "^2.8.7"
+  },
+  "dependencies": {
+    "core-js": "^3.30.1",
+    "vite": "^4.2.1"
+  }
 }
