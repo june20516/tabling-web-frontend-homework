@@ -30,6 +30,10 @@ body div.container div.list div.list-item {
   height: 7rem;
 }
 
+body div.container div.list div.list-item:nth-child(n):not(:last-child) {
+  margin-bottom: 1rem;
+}
+
 body div.container div.list div.list-item div.reservation-info {
   width: 20%;
   display: flex;
