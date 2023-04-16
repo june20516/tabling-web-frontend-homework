@@ -1,9 +1,62 @@
 <!DOCTYPE html>
 <html>
-    <head>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <title>예약 목록</title>
+  </head>
+  <body>
+    <h1 class="title">예약 목록</h1>
+    <div class="container">
+      <div id="reservation-list" class="list">
+        <div class="list-item template">
+          <div class="reservation-info">
+            <div class="time">
+              <span key="reservations.timeReserved" class="place-holder-text"
+                >HH:mm</span
+              >
+            </div>
+            <div class="reservations.status">
+              <span class="place-holder-text">....</span>
+            </div>
+          </div>
 
-    </head>
-    <body>
-
-    </body>
+          <div class="customer-info space-y">
+            <div class="name">
+              <span key="reservations.customer.name" class="place-holder-text">
+                ......
+              </span>
+              <span> - </span>
+              <span key="reservations.tables.name" class="place-holder-text">
+                ......
+              </span>
+            </div>
+            <div class="composition">
+              성인
+              <span key="reservations.customer.adult" class="place-holder-text"
+                >00</span
+              >
+              &nbsp; 아이
+              <span key="reservations.customer.child" class="place-holder-text"
+                >00</span
+              >
+            </div>
+            <div class="orders">
+              <span key="reservations.menus.name" class="place-holder-text"
+                >......</span
+              >
+              (<span key="reservations.menus.qty" class="place-holder-text"
+                >......</span
+              >)
+            </div>
+          </div>
+          <div class="actions">
+            <button><span class="place-holder-text">....</span></button>
+          </div>
+        </div>
+      </div>
+      <div id="reservation-detail" class="detail"></div>
+    </div>
+    <script type="module" src="/index.js"></script>
+  </body>
 </html>
