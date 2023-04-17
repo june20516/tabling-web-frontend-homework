@@ -89,12 +89,20 @@ body div.container div.list div.list-item div.actions {
 }
 
 body div.container div.list div.list-item div.actions button {
-  border: 0;
-  cursor: pointer;
-  padding: 1rem;
-  border-radius: 0.8rem;
   width: 100%;
+  padding: 1rem;
+
+  background-color: white;
+  border: solid 1px lightslategray;
+  border-radius: 0.8rem;
   font-size: larger;
+
+  cursor: pointer;
+}
+
+body div.container div.list div.list-item div.actions button.primary {
+  background-color: lightslategray;
+  color: white;
 }
 
 span.place-holder-text {

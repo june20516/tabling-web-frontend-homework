@@ -66,7 +66,8 @@ const moderateStyle = (el, key, value) => {
   switch (key) {
     case "reservations.status":
       const listItem = findAncestorByClassName(el, "list-item");
-      const actionButtonText = listItem.querySelector(".actions button span");
+      const actionButton = listItem.querySelector(".actions button");
+      const actionButtonText = actionButton.querySelector("span");
       console.log(listItem);
       if (value === "done") {
         listItem.classList.add("hidden");
@@ -81,6 +82,7 @@ const moderateStyle = (el, key, value) => {
         if (actionButtonText) {
           actionButtonText.innerHTML = "착석";
           actionButtonText.classList.remove("place-holder-text");
+          actionButton.classList.add("primary");
         }
       }
       break;
