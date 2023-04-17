@@ -16,8 +16,10 @@
                 >HH:mm</span
               >
             </div>
-            <div class="reservations.status">
-              <span class="place-holder-text">....</span>
+            <div class="status">
+              <span key="reservations.status" class="place-holder-text">
+                ....
+              </span>
             </div>
           </div>
 
@@ -26,28 +28,27 @@
               <span key="reservations.customer.name" class="place-holder-text">
                 ......
               </span>
-              <span> - </span>
-              <span key="reservations.tables.name" class="place-holder-text">
-                ......
+              <span>&nbsp;-&nbsp;</span>
+              <span key="reservations.tables[]">
+                <span key="name" class="place-holder-text"> ...... </span>
               </span>
             </div>
             <div class="composition">
-              성인
-              <span key="reservations.customer.adult" class="place-holder-text"
-                >00</span
-              >
-              &nbsp; 아이
-              <span key="reservations.customer.child" class="place-holder-text"
-                >00</span
-              >
+              <span key="reservations.customer.adult" class="place-holder-text">
+                성인 00
+              </span>
+              &nbsp;
+              <span key="reservations.customer.child" class="place-holder-text">
+                아이 00
+              </span>
             </div>
-            <div class="orders">
-              <span key="reservations.menus.name" class="place-holder-text"
-                >......</span
-              >
-              (<span key="reservations.menus.qty" class="place-holder-text"
-                >......</span
-              >)
+            <div class="menu-info">
+              <span key="reservations.menus[]" class="menu">
+                <span key="name" class="place-holder-text"> ...... </span>
+                (
+                <span key="qty" class="place-holder-text"> ...... </span>
+                )
+              </span>
             </div>
           </div>
           <div class="actions">
